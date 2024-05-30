@@ -1,0 +1,17 @@
+{
+    "name": "gcp-pubsub-action",
+    "version": "1.0.0",
+    "description": "Queue GCP PubSub Message from Github Actions",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@actions/core": "^1.10.1",
+      "@actions/github": "^6.0.0",
+      "@google-cloud/pubsub": "^4.4.0"
+    }
+  }
+  

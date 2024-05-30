@@ -1,0 +1,18 @@
+name: "GCP PubSub Github Action"
+description: "Queue GCP PubSub Message from Github Actions"
+inputs:
+  project-id:
+    description: "GCP Project ID"
+    required: true
+  pubsub-topic:
+    description: "PubSub Topic name"
+    required: true
+  message-body:
+    description: "PubSub message body"
+    required: true
+outputs:
+  message-id:
+    description: "PubSub message ID"
+runs:
+  using: "node20"
+  main: "index.js"
