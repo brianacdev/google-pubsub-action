@@ -1,11 +1,11 @@
-name: "GCP PubSub Github Action"
-description: "Queue GCP PubSub Message from Github Actions"
+name: "Google Cloud PubSub GH Action"
+description: "Send Message to Google Cloud PubSub topic"
 inputs:
   project-id:
-    description: "GCP Project ID"
+    description: "Google Cloud Project ID"
     required: true
   pubsub-topic:
-    description: "PubSub Topic name"
+    description: "PubSub topic name"
     required: true
   message-body:
     description: "PubSub message body"
