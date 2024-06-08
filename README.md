@@ -1,4 +1,4 @@
-# action-gc-pubsub
+# google-pubsub-action
 
 # MarketDial Queue GCP PubSub Message from Github Actions
 
@@ -42,7 +42,7 @@ steps:
       token_format: 'access_token'
 
   - name: 'Publishing Build Started for ${{ github.ref_name }} by ${{ github.triggering_actor }}'
-    uses: marketdial/gcp-pubsub-action@v1
+    uses: briancolemannet/google-pubsub-action@v2
     with:
       project-id: md-build
       pubsub-topic: ftr-env-manager
